@@ -7,7 +7,7 @@ def divisible_by_5?(number)
 end
 
 def divisible_by_3_and_5?(number)
-  number % 3 == 0 && number % 5 == 0
+  divisible_by_3?(number) && divisible_by_5?(number)
 end
 
 def fizzbuzz(number)
