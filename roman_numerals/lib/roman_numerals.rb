@@ -19,6 +19,18 @@ def roman_numerals(number)
   end
 end
 
+def tens_array
+  ['X', "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"]
+end
+
+def hundreds_array
+  ["C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"]
+end
+
+def ones_array
+  ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "XV"]
+end
+
 def thousands(number)
   index_thousand = number / 1000
 end
@@ -43,17 +55,7 @@ def remainder_ones(number)
   remainder_ones = number % 10
 end
 
-def tens_array
-  ['X', "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"]
-end
 
-def hundreds_array
-  ["C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"]
-end
-
-def ones_array
-  ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "XV"]
-end
 
 def one_numerals(number)
   return "" if number == 0
