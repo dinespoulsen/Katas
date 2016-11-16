@@ -22,6 +22,18 @@ describe "roman numerals" do
     end
   end
 
+  context "when number is above or eqal 1000" do
+    it "should return the remaining hundreds" do
+      expect(remainder_hundreds(1111)).to eq 111
+    end
+    it "should return the remaining hundreds" do
+      expect(remainder_tens(1111)).to eq 11
+    end
+    it "should return the remaining hundreds" do
+      expect(remainder_ones(1111)).to eq 1
+    end
+  end
+
   context "when given a number" do
     it "1 should return I" do
       expect(one_numerals(1)).to eq "I"
