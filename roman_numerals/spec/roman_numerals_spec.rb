@@ -1,15 +1,7 @@
 require "roman_numerals"
 
 describe "roman numerals" do
-  it "should contain an array with tens" do
-    expect(tens_array).to eq ['X', "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"]
-  end
-  it "should contain an array with hundreds" do
-    expect(hundreds_array).to eq  ["C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"]
-  end
-  it "should contain an array with the firt numerals" do
-    expect(ones_array).to eq ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "XV"]
-  end
+
   context "has an index method that" do
     it "returns the number of tens" do
       expect(tens(20)).to eq 2
@@ -48,7 +40,7 @@ describe "roman numerals" do
       expect(thousand_numerals(thousands(1000))).to eq "M"
     end
 
-    it "1111 should return" do
+    it "1111 should return MCXI" do
       expect(roman_numerals(1111)).to eq "MCXI"
     end
   end
